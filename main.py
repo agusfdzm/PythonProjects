@@ -52,6 +52,10 @@ def pedir_intento(intentos, numero_secreto):
                 print("El numero secreto es mayor")
 
             intentos -= 1
+
+            if intentos <= 0 and intento != numero_secreto:
+                print(f"Has fallado! El numero secreto era {numero_secreto}")
+
         except ValueError:
             print("Introduce un numero válido.")
 
